@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-segundario: #C0C0C0; 
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+
+    --fonte_principal: 'Inter', sans-serif; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color:  var(--branco-principal);
+    font-family: var(--fonte_principal);
+    font-size: 1rem ;
+    font-weight: 400;
+    
+}
+
+.principal{
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa{
+    margin: 0 6rem;
+}
+
+.container__titulo{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.container__img__combo{
+    margin: 1rem 0 2rem 0;
+}
+
+.container__botao{  
+    text-decoration: none;
+    background-color: var(--botao-azul);
+    border-radius: 0.5rem;
+    color: var(--branco-principal);
+    padding: 1rem;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.botao_segundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso{
+    font-size: 0.85rem;
+    color: var(--cinza-segundario);
+}
+
+.container__img__pixel{
+    width: 80%;
+}
+
+.segundario{
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.container__descricao__titulo{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.container__descricao__paragrafo{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cinza-segundario);
+}
+
+.segundario__botao{
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.container__descricao{
+    padding: 2rem;
+}
+
+.dipositivos{
+    text-align: center;
+}
+
+.dipositivos__titulos{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.dipositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5rem 0;
+}
+
+.rodape{
+    text-align: center; 
+    margin: 3rem;   
+}
+
+.rodape__logo{
+    margin: 2rem;
+}
+
+.rodape_lista{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 10rem 2rem 10rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.lista__link__link{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.rodape__texto{
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: var(--cinza-segundario);
+    margin: 1rem 10rem 2rem 10rem;
+}
+
+.rodape__texto2{
+    margin-top: 2rem;
+}
+
+.lista__link__link:hover{
+    color: var(--botao-azul);
+}
